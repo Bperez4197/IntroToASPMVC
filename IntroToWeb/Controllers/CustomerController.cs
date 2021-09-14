@@ -20,7 +20,7 @@ namespace IntroToWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Submit");
+                return RedirectToAction("Submit", model);
             }
             return View(model);
         }
