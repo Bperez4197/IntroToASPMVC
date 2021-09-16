@@ -1,7 +1,8 @@
 ﻿@model IntroToWeb.Models.CustomerModel
 
 @{
-    Layout = null;
+    ViewBag.Title = "Submit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -21,27 +22,34 @@
             <dt>
                 @Html.DisplayNameFor(model => model.FirstName)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.FirstName)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.LastName)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.LastName)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.BusinessName)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.BusinessName)
             </dd>
-    
+            <dt>
+                @Html.DisplayNameFor(model => model.ProjectCost)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ProjectCost)
+            </dd>
+
         </dl>
     </div>
     <p>
